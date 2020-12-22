@@ -4,6 +4,30 @@ body {
     background-size: cover;
     font-family: 'Roboto', sans-serif;
     color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.page-container {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 10%;
+    border-radius: 15px;
+    background-color: rgb(240, 240, 240);
+}
+
+.page-inset {
+    padding-top: 5px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+}
+
+.header-title {
+    margin-bottom: 0px;
+}
+
+.header-paragraph {
+    margin-top: 0px;
 }
 
 nav {
@@ -37,32 +61,31 @@ nav ul li a:hover {
     color: rgb(64, 64, 64);
 }
 
-.page-container {
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 20%;
-    border-radius: 15px;
-    background-color: rgb(240, 240, 240);
-}
-
-.page-inset {
-    padding-top: 5px;
-    padding-right: 25px;
-    padding-bottom: 5px;
-    padding-left: 25px;
-}
-
-.header-title {
-    margin-bottom: 0px;
-}
-
-.header-paragraph {
-    margin-top: 0px;
-}
-
 input[type=text] {
     width: 90%;
     padding: 12px 20px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    font-size: 6px;
+}
+
+footer a:link, footer a:active, footer a:visited {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+footer a:hover {
+    color: rgb(64, 64, 64);
+}
+
+footer p {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -72,4 +95,4 @@ input[type=text] {
         margin-left:10%;
         background-color: rgb(240, 240, 240);
     }
-  }
+}
