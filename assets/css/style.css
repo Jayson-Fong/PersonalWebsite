@@ -41,7 +41,6 @@ nav ul li a:hover {
     margin-left: 30%;
     margin-right: 30%;
     margin-top: 20%;
-    margin-bottom: 20%;
     border-radius: 15px;
     background-color: rgb(240, 240, 240);
 }
@@ -65,3 +64,12 @@ input[type=text] {
     width: 90%;
     padding: 12px 20px;
 }
+
+@media only screen and (max-width: 800px) {
+    .page-container {
+        margin-top: 10%;
+        margin-right: 10%;
+        margin-left:10%;
+        background-color: rgb(240, 240, 240);
+    }
+  }
