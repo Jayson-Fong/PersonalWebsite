@@ -5,6 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: rgb(0, 0, 0);
     margin: 0;
+    flex-direction: column;
 }
 
 .page-container {
@@ -20,6 +21,8 @@ body {
     padding-right: 25px;
     padding-bottom: 5px;
     padding-left: 25px;
+    min-height: 100%;
+    margin-bottom: -32px;
 }
 
 .header-title {
@@ -61,17 +64,28 @@ nav ul li a:hover {
     color: rgb(64, 64, 64);
 }
 
+main {
+    padding-bottom: 25px;
+}
+
 input[type=text] {
     width: 90%;
     padding: 12px 20px;
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     background-color: rgb(240, 240, 240);
-    font-size: 6px;
+    font-size: 12px;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+footer:hover {
+    font-size: 24px;
 }
 
 footer a:link, footer a:active, footer a:visited {
@@ -84,11 +98,37 @@ footer a:hover {
 }
 
 footer p {
-    margin-left: 5px;
-    margin-right: 5px;
+    display: inline;
+}
+
+#attribution {
+    margin-left: 10px;
+    display: inline;
+}
+
+#icon-set {
+    display: inline;
+    margin-right: 10px;
+    float: right;
+}
+
+#icon-twitter:hover {
+    color: rgb(0, 172, 238);
+}
+
+#icon-github:hover {
+    color: rgb(64, 120, 192);
+}
+
+#icon-mail:hover {
+    color: rgb(128, 128, 128);
 }
 
 @media only screen and (max-width: 800px) {
+    body {
+        background-attachment: scroll;
+    }
+
     .page-container {
         margin-top: 10%;
         margin-right: 10%;
