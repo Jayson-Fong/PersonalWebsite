@@ -1,11 +1,12 @@
 body {
-    background-image: url(https://source.unsplash.com/weekly?terminal);
-    background-repeat: no-repeat;
+    background-image: url(../img/ocean.jpg);
+    background-repeat: repeat;
     background-size: cover;
     font-family: 'Roboto', sans-serif;
     color: rgb(0, 0, 0);
     margin: 0;
-    flex-direction: column;
+    font-size: 16px;
+    background-color: rgb(172, 172, 172);
 }
 
 .page-container {
@@ -31,6 +32,22 @@ body {
 
 .header-paragraph {
     margin-top: 0px;
+}
+
+.desktop {
+    display: block;
+}
+
+.desktop-inline {
+    display: inline;
+}
+
+.mobile {
+    display: none;
+}
+
+.mobile-inline {
+    display: none;
 }
 
 nav {
@@ -64,6 +81,12 @@ nav ul li a:hover {
     color: rgb(64, 64, 64);
 }
 
+nav ul li:hover {
+    background-color: rgb(212, 212, 212);
+    padding: 5px;
+    border-radius: 5px;
+}
+
 main {
     padding-bottom: 25px;
 }
@@ -71,6 +94,7 @@ main {
 input[type=text] {
     width: 90%;
     padding: 12px 20px;
+    border-radius: 5px;
 }
 
 footer {
@@ -82,6 +106,7 @@ footer {
     display: block;
     padding-top: 5px;
     padding-bottom: 5px;
+    opacity: 0.5;
 }
 
 footer:hover {
@@ -124,7 +149,7 @@ footer p {
     color: rgb(128, 128, 128);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
     body {
         background-attachment: scroll;
     }
@@ -133,6 +158,56 @@ footer p {
         margin-top: 10%;
         margin-right: 10%;
         margin-left:10%;
-        background-color: rgb(240, 240, 240);
+    }
+
+    nav ul li {
+        font-size: 14px;
+    }
+
+    .desktop, .display-inline {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .mobile-inline {
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav ul li {
+        font-size: 12px;
+    }
+
+    .desktop, .desktop-inline {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .mobile-inline {
+        display: inline;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer:hover {
+        font-size: 12px;
+    }
+
+    #attribution, #icon-set {
+        display: block;
+    }
+
+    #icon-set {
+        float: none;
+        font-size: 32px;
     }
 }

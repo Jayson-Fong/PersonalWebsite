@@ -1,3 +1,7 @@
+/* Invitation Code Processing
+ * Opens a new window depending on user input.
+ * Room for Improvement: Processing Server to Prevent Snooping
+ */
 window.onload = onPageLoad;
 document.getElementById('invitation').addEventListener('input', onInvitationInput);
 document.getElementById('invitation').addEventListener('keyup', function(event) {
