@@ -39,9 +39,85 @@
         </script>
         <!-- End Google Tag Manager -->
         <link rel="icon" href="favicon.jpg" type="image/jpeg" sizes="32x32" />
-        <link rel="stylesheet" href="./assets/css/style.min.css" />
+        <link rel="preload" as="style" href="./assets/css/style.min.css" onload="this.rel='stylesheet'" />
         <link rel="preconnect" href="https://fonts.gstatic.com" /> 
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+        <style>
+            body {
+                color: rgb(0, 0, 0);
+                margin: 0;
+                font-size: 16px;
+                background-color: rgb(172, 172, 172);
+            }
+
+            .page-container {
+                margin-left: 30%;
+                margin-right: 30%;
+                margin-top: 10%;
+                border-radius: 15px;
+                background-color: rgb(240, 240, 240);
+            }
+
+            .page-inset {
+                padding-top: 5px;
+                padding-right: 25px;
+                padding-bottom: 5px;
+                padding-left: 25px;
+                min-height: 100%;
+                margin-bottom: -32px;
+            }
+
+            nav {
+                border-bottom: 1px solid;
+                border-top: 1px solid;
+            }
+
+            nav ul {
+                list-style-type: none;
+                list-style: none;
+                margin: 0;
+                padding: 6px;
+                overflow: hidden;
+                text-align: center;
+            }
+
+            nav ul li {
+                display: inline;
+            }
+
+            nav ul li a:link,
+            nav ul li a:visited,
+            nav ul li a:active {
+                padding: 2px;
+                text-decoration: none;
+                font-weight: 900;
+                color: rgb(0, 0, 0);
+            }
+
+            nav ul li a:hover {
+                color: rgb(64, 64, 64);
+            }
+
+            nav ul li:hover {
+                background-color: rgb(212, 212, 212);
+                padding: 5px;
+                border-radius: 5px;
+            }
+
+            i, h2 {
+                display: inline;
+            }
+
+            a {
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: rgb(64, 64, 64);
+            }
+        </style>
     </head>
     <body>
         <!-- Google Tag Manager (noscript) -->
@@ -127,8 +203,8 @@
                     <div id="attribution">
                         <p>&copy; Jayson Fong 2020<span class="noprint"> | Background image by <a href="http://thepatternlibrary.com/#ocean" target="_blank">Jon Vlasach</a></span>.</p>
                     </div>
-                    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" defer />
-                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" async />
+                    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" onload="this.rel='stylesheet'" />
+                    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" onload="this.rel='stylesheet'" />
                     <script src="./assets/js/process.min.js" defer></script>
                 </footer>
             </div>

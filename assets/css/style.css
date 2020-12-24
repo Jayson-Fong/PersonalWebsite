@@ -235,9 +235,15 @@ footer p {
 }
 
 @media print {
+    @page {
+        margin: 0;
+    }
+
     body {
         background-image: none;
         background-color: rgb(255, 255, 255);
+        color-adjust: exact;
+        -webkit-print-color-adjust: exact !important;
     }
 
     .page-container {
