@@ -259,4 +259,8 @@ footer p {
     #education, #awards, #experience {
         display: block;
     }
+
+    .noprint {
+        display: none;
+    }
 }
