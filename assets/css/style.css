@@ -233,3 +233,30 @@ footer p {
         font-size: 32px;
     }
 }
+
+@media print {
+    body {
+        background-image: none;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .page-container {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5%;
+        border-radius: 15px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    nav, #invitation-text, #invitation, #icon-set {
+        display: none;
+    }
+
+    .collapsible {
+        background-color: rgb(240, 240, 240);
+    }
+
+    #education, #awards, #experience {
+        display: block;
+    }
+}
