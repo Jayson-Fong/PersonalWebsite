@@ -1,5 +1,5 @@
 body {
-    background-image: url(../img/ocean.jpg);
+    background-image: url(../img/ocean.jpf);
     background-repeat: repeat;
     background-size: cover;
     font-family: 'Roboto', sans-serif;
@@ -32,22 +32,6 @@ body {
 
 .header-paragraph {
     margin-top: 0px;
-}
-
-.desktop {
-    display: block;
-}
-
-.desktop-inline {
-    display: inline;
-}
-
-.mobile {
-    display: none;
-}
-
-.mobile-inline {
-    display: none;
 }
 
 nav {
@@ -194,35 +178,11 @@ footer p {
     nav ul li {
         font-size: 14px;
     }
-
-    .desktop, .display-inline {
-        display: none;
-    }
-
-    .mobile {
-        display: block;
-    }
-
-    .mobile-inline {
-        display: inline;
-    }
 }
 
 @media only screen and (max-width: 600px) {
     nav ul li {
         font-size: 12px;
-    }
-
-    .desktop, .desktop-inline {
-        display: none;
-    }
-
-    .mobile {
-        display: block;
-    }
-
-    .mobile-inline {
-        display: inline;
     }
 
     footer {
