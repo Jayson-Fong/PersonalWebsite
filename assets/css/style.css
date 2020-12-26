@@ -1,8 +1,8 @@
 body {
-    background-image: url(../img/ocean.jpf);
+    background-image: url(../img/ocean.webp);
     background-repeat: repeat;
     background-size: cover;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     color: rgb(0, 0, 0);
     margin: 0;
     font-size: 16px;
@@ -140,16 +140,11 @@ footer a:hover {
 }
 
 footer p {
-    display: inline;
-}
-
-#attribution {
-    margin-left: 10px;
+    margin: 0px;
 }
 
 #icon-set {
     font-size: 16px;
-    margin-right: 10px;
 }
 
 #icon-twitter:hover {
@@ -172,7 +167,7 @@ footer p {
     .page-container {
         margin-top: 10%;
         margin-right: 10%;
-        margin-left:10%;
+        margin-left: 10%;
     }
 
     nav ul li {
@@ -181,6 +176,12 @@ footer p {
 }
 
 @media only screen and (max-width: 600px) {
+    .page-container {
+        margin-top: 5%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
     nav ul li {
         font-size: 12px;
     }
