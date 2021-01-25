@@ -4,14 +4,18 @@
  */
 'use strict';
 
+// Open & Close the Collapsibles
 function toggleCollapsible(element) {
     var collapsible = document.getElementById(element.getAttribute('data-collapsible-id'));
     collapsible.hidden = !collapsible.hidden;
     var carets = (element.getElementsByClassName('collapsible-button')[0b0]).getElementsByTagName('i');
+    // Hide the First Caret Down
     hideElement(carets[0b0], !collapsible.hidden);
+    // Hide the First Caret Up
     hideElement(carets[0b1], collapsible.hidden);
 }
 
+// Hides (Almost) Any Element
 function hideElement(element, show) {
     if (show) {
         element.style.display = 'inline';
@@ -29,3 +33,5 @@ Array.prototype.forEach.call(collapsibleButtons, function(element) {
         toggleCollapsible(element);
     });
 });
+
+document.getElementById('copyright-year').innerHTML = new Date().getFullYear();
