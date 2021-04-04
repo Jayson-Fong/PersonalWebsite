@@ -20,43 +20,26 @@ body {
     margin-bottom: -32px;
 }
 
+#header-grid {
+    display: grid;
+    align-items: center;
+}
+
 .header-title {
     margin-bottom: 0px;
 }
 
-.header-paragraph {
-    margin-top: 0px;
-}
-
-nav {
-    border-bottom: 1px solid;
-    border-top: 1px solid;
-}
-
-nav ul {
-    list-style-type: none;
-    list-style: none;
-    margin: 0;
-    padding: 6px;
-    overflow: hidden;
-    text-align: center;
-}
-
-nav ul li {
+.mobile-block {
     display: inline;
 }
 
-nav ul li a:link,
-nav ul li a:visited,
-nav ul li a:active {
-    padding: 2px;
-    text-decoration: none;
-    font-weight: 900;
-    color: rgb(0, 0, 0);
+#link-bar {
+    grid-column: 2/2;
+    text-align: right;
 }
 
-nav ul li a:hover {
-    color: rgb(64, 64, 64);
+.header-paragraph {
+    margin-top: 0px;
 }
 
 i, h2 {
@@ -118,5 +101,15 @@ footer p {
 
     nav ul li {
         font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    #link-bar h1 {
+        font-size: 1.5em;
+    }    
+
+    .mobile-block {
+        display: block;
     }
 }

@@ -26,8 +26,22 @@ body {
     margin-bottom: -32px;
 }
 
+#header-grid {
+    display: grid;
+    align-items: center;
+}
+
 .header-title {
     margin-bottom: 0px;
+}
+
+.mobile-block {
+    display: inline;
+}
+
+#link-bar {
+    grid-column: 2/2;
+    text-align: right;
 }
 
 .header-paragraph {
@@ -227,5 +241,15 @@ footer p {
 
     .noprint {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    #link-bar h1 {
+        font-size: 1.5em;
+    }    
+
+    .mobile-block {
+        display: block;
     }
 }

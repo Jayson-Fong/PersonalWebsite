@@ -57,43 +57,26 @@
                 margin-bottom: -32px;
             }
 
+            #header-grid {
+                display: grid;
+                align-items: center;
+            }
+
             .header-title {
                 margin-bottom: 0px;
             }
 
-            .header-paragraph {
-                margin-top: 0px;
-            }
-
-            nav {
-                border-bottom: 1px solid;
-                border-top: 1px solid;
-            }
-
-            nav ul {
-                list-style-type: none;
-                list-style: none;
-                margin: 0;
-                padding: 6px;
-                overflow: hidden;
-                text-align: center;
-            }
-
-            nav ul li {
+            .mobile-block {
                 display: inline;
             }
 
-            nav ul li a:link,
-            nav ul li a:visited,
-            nav ul li a:active {
-                padding: 2px;
-                text-decoration: none;
-                font-weight: 900;
-                color: rgb(0, 0, 0);
+            #link-bar {
+                grid-column: 2/2;
+                text-align: right;
             }
 
-            nav ul li a:hover {
-                color: rgb(64, 64, 64);
+            .header-paragraph {
+                margin-top: 0px;
             }
 
             i, h2 {
@@ -157,29 +140,46 @@
                     font-size: 12px;
                 }
             }
+
+            @media only screen and (max-width: 430px) {
+                #link-bar h1 {
+                    font-size: 1.5em;
+                }    
+
+                .mobile-block {
+                    display: block;
+                }
+            }
         </style>
         <link rel="preload" as="style" href="./assets/css/style.min.css" onload="this.rel='stylesheet'" />
         <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" onload="this.rel='stylesheet'" />
         <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css" integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g==" crossorigin="anonymous" onload="this.rel='stylesheet'" />
         <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/solid.min.css" integrity="sha512-SazV6tF6Ko4GxhyIZpKoXiKYndqzh7+cqxl9HDH7DGSpjkCN3QLqTAlhJHJnKxu3/2rfCsltzwFC4CmxZE1hPg==" crossorigin="anonymous" onload="this.rel='stylesheet'" />
+        <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css" integrity="sha512-apX8rFN/KxJW8rniQbkvzrshQ3KvyEH+4szT3Sno5svdr6E/CP0QE862yEeLBMUnCqLko8QaugGkzvWS7uNfFQ==" crossorigin="anonymous" onload="this.rel='stylesheet'" />
     </head>
     <body>
         <script src="./assets/js/process.min.js" async></script>
         <div class="page-container">
             <div class="page-inset">
                 <header>
-                    <h1 class="header-title">Jayson Fong</h1>
+                    <div id="header-grid">
+                        <div style="grid-column: 1 / 2;">
+                            <h1 class="header-title">Jayson Fong</h1>
+                        </div>
+                        <div id="link-bar">
+                            <h1 class="header-title">
+                                <a href="https://twitter.com/realjaysonfong" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i></a>
+                                <a href="https://github.com/Jayson-Fong" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+                                <div class="mobile-block">
+                                    <a href="https://www.linkedin.com/in/jaysonfong/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://www.instagram.com/fong.jayson/" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </h1>
+                        </div>
+                    </div>
                     <p class="header-paragraph">Chief Operating Officer, Interbix Holdings LLC</p>
                 </header>
-                <nav>
-                    <ul>
-                        <li><a href="https://twitter.com/realjaysonfong" target="_blank" rel="noreferrer">Twitter</a></li>
-                        <li><a href="https://github.com/Jayson-Fong" target="_blank" rel="noreferrer">GitHub</a></li>
-                        <li><a href="https://www.linkedin.com/in/jaysonfong/" target="_blank" rel="noreferrer">Linkedin</a></li>
-                        <li><a href="https://www.instagram.com/fong.jayson/" target="_blank" rel="noreferrer">Instagram</a></li>
-                        <li><a href="mailto:contact@jaysonfong.org" target="_blank">Contact</a></li>
-                    </ul>
-                </nav>
+                <hr/>
                 <main>
                     <p>I am a programmer and debater striving to achieve the impossibility of maximal knowledge. I work to improve our world through creating tools, research, and volunteering at community events.</p>
                     <a href="#education" class="collapsible-button-link" data-collapsible-id="education">
