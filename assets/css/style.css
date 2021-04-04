@@ -245,10 +245,6 @@ footer p {
 }
 
 @media only screen and (max-width: 430px) {
-    #link-bar h1 {
-        font-size: 1.5em;
-    }    
-
     .mobile-block {
         display: block;
     }
