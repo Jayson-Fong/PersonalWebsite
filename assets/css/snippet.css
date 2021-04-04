@@ -59,11 +59,6 @@ nav ul li a:hover {
     color: rgb(64, 64, 64);
 }
 
-nav ul li:hover {
-    padding: 5px;
-    border-radius: 5px;
-}
-
 i, h2 {
     display: inline;
 }

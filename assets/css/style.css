@@ -67,8 +67,6 @@ nav ul li a:hover {
 
 nav ul li:hover {
     background-color: rgb(212, 212, 212);
-    padding: 5px;
-    border-radius: 5px;
 }
 
 h2, h3 {
