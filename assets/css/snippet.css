@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.page-container {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10%;
+    border-radius: 15px;
+}
+
+.page-inset {
+    padding-top: 5px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    min-height: 100%;
+    margin-bottom: -32px;
+}
+
+.header-title {
+    margin-bottom: 0px;
+}
+
+.header-paragraph {
+    margin-top: 0px;
+}
+
+nav {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+}
+
+nav ul {
+    list-style-type: none;
+    list-style: none;
+    margin: 0;
+    padding: 6px;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a:link,
+nav ul li a:visited,
+nav ul li a:active {
+    padding: 2px;
+    text-decoration: none;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+}
+
+nav ul li a:hover {
+    color: rgb(64, 64, 64);
+}
+
+nav ul li:hover {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+i, h2 {
+    display: inline;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(64, 64, 64);
+}
+
+h2 {
+    font-size: 18px;
+}
+
+.collapsible-button {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: 12px;
+}
+
+footer p {
+    margin: 0px;
+}
+
+@media only screen and (max-width: 850px) {
+    body {
+        background-attachment: scroll;
+    }
+
+    .page-container {
+        margin-top: 10%;
+        margin-right: 10%;
+        margin-left:10%;
+    }
+
+    nav ul li {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .page-container {
+        margin-top: 5%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    nav ul li {
+        font-size: 12px;
+    }
+}

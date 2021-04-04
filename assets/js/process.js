@@ -28,7 +28,6 @@ function hideElement(element, show) {
 
 var collapsibleButtons = document.getElementsByClassName('collapsible-button-link');
 Array.prototype.forEach.call(collapsibleButtons, function(element) {
-    toggleCollapsible(element);
     element.addEventListener('click', function(event) {
         toggleCollapsible(element);
     });
